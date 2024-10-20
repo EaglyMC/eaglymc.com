@@ -1,4 +1,4 @@
-
+ 
 language.name=English
 language.region=US
 language.code=en_US
@@ -1412,6 +1412,10 @@ item.helmetIron.name=Iron Helmet
 item.chestplateIron.name=Iron Chestplate
 item.leggingsIron.name=Iron Leggings
 item.bootsIron.name=Iron Boots
+item.helmetNetherite.name=Netherite Helmet
+item.chestplateNetherite.name=Netherite Chestplate
+item.leggingsNetherite.name=Netherite Leggings
+item.bootsNetherite.name=Netherite Boots
 item.helmetDiamond.name=Diamond Helmet
 item.chestplateDiamond.name=Diamond Chestplate
 item.leggingsDiamond.name=Diamond Leggings
