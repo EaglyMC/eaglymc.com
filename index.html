@@ -3,22 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-		<meta name="description" content="Eaglercraft with 1.20 Features" />
-		<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8, eaglymc, eaglercraft 1.20" />
-		<title>EaglyMC</title>
+		<meta name="description" content="EaglercraftX 1.8 test directory HTML page" />
+		<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
+		<title>EaglyMC 1.20</title>
 		<meta property="og:locale" content="en-US" />
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="EaglyMC" />
-		<meta property="og:image" content="https://i.pinimg.com/736x/ae/a4/20/aea420568d97e7aa8704db9501261402.jpg" />
-		<meta property="og:description" content="Eaglercraft with 1.20 Features" />
-		<link type="image/png" rel="shortcut icon" href="favicon.png" />		
- 		<script type="text/javascript"
-		 src="classes.js"></script>
+		<meta property="og:title" content="EaglyMC 1.20" />
+		<meta property="og:description" content="test directory HTML page" />
+		<link type="image/png" rel="shortcut icon" href="favicon.png" />
+		<script type="text/javascript" src="classes.js"></script>
 		<script type="text/javascript">
 			"use strict";
 			window.addEventListener("load", function() {
 				if(window.location.href.indexOf("file:") === 0) {
-					alert("plebian has the workspace but doesn't know how to compile an html, smh.");
+					alert("HTTP please, do not open this file locally, run a local HTTP server and load it via HTTP");
 				}else {
 					var relayId = Math.floor(Math.random() * 3);
 					window.eaglercraftXOpts = {
@@ -29,9 +27,12 @@
 						worldsDB: "worlds",
 						logInvalidCerts: true,
 						crashOnUncaughtExceptions: true,
+						servers: [
+							{ addr: "ws://localhost:8081/", name: "Local test server" }
+						],
 						relays: [
 							{ addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
-							{ addr: "wss://eaglerrelay.glitch.me", comment: "lax1dude relay #2", primary: relayId === 1 },
+							{ addr: "wss://relay.lax1dude.net/", comment: "lax1dude relay #2", primary: relayId === 1 },
 							{ addr: "wss://relay.shhnowisnottheti.me/", comment: "ayunami relay #1", primary: relayId === 2 }
 						]
 					};
